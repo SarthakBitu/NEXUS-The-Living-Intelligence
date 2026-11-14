@@ -1,0 +1,56 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-display: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  html,
+  body,
+  #root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #030408;
+    color: #f1f5f9;
+    font-family: var(--font-sans);
+    overflow: hidden;
+  }
+
+  button,
+  a,
+  input,
+  select {
+    outline-offset: 2px;
+  }
+
+  button:focus-visible,
+  a:focus-visible,
+  input:focus-visible,
+  select:focus-visible {
+    outline: 2px solid #2ef2b8;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Custom thin dark scrollbar for conversation drawer */
+.nexus-scroll::-webkit-scrollbar {
+  width: 5px;
+}
+.nexus-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+.nexus-scroll::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.14);
+  border-radius: 9999px;
+}
+.nexus-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgba(46, 242, 184, 0.35);
+}

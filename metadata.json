@@ -1,0 +1,11 @@
+{
+  "name": "NEXUS — The Living Intelligence",
+  "description": "An interactive 3D digital consciousness powered by custom GLSL GPU particle shaders, spatial audio reactivity, optional MediaPipe hand tracking, and Gemini AI.",
+  "requestFramePermissions": [
+    "microphone",
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
